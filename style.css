@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+}
+
+.game-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* default scene */
+  opacity: 0;
+  visibility: hidden;
+  /* change scene */
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.game-screen.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #555;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
